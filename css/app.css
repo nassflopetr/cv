@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-color: #f6f6f6;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+}
+
+.wrapper {
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    position: relative;
+}
+
+.side-bar {
+    background-color: #E0EBFE;
+    width: 370px;
+    padding: 40px 0;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.about-me-container {
+    padding: 100px 90px;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.contacts-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #161D2A;
+    transition: color 0.3s ease;
+}
+
+.contacts-link.email {
+    text-decoration: underline;
+    color: revert;
+}
+
+.contacts-link:hover,
+.training-text:hover {
+    color: #6D9BF5;
+}
+
+.contacts-link-type {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #161D2A;
+    margin-right: 10px;
+    width: 15px;
+    display: inline-block;
+}
+
+.aside-container {
+    margin: 50px 40px 0;
+}
+
+.aside-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #161D2A;
+}
+
+.aside-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #6D9BF5;
+    margin-left: 15px;
+}
+
+.aside-text {
+    color: #161D2A;
+    transition: color 0.3s ease;
+}
+
+.bio-occupation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.bio-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000;
+}
+
+.bio-description {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.info-container {
+    margin-bottom: 50px;
+}
+
+.projects {
+    margin: 64px 0 50px;
+}
+
+.projects__list {
+    counter-reset: list;
+    margin-left: 1.5rem;
+}
+
+.projects__item {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    counter-increment: list;
+    margin: 6px 0;
+}
+
+.projects__item::before {
+    content: counter(list)'.';
+    position: absolute;
+    left: -1.5rem;
+    color: #000;
+    display: block;
+    font-weight: 700;
+}
+
+.projects__link {
+    color: #005FFF;
+    text-decoration: underline;
+}
+
+.projects__decor-line {
+    flex-grow: 1;
+    border-bottom: 1px dashed #595959;
+}
+
+.projects__skill {
+    font-size: 14px;
+    line-height: 14px;
+    color: #595959;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: #000;
+}
+
+.portfolio {
+    color: #161D2A;
+}
+
+.portfolio-link {
+    color: #6D9BF5;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+}
+
+.portfolio-link,
+.company-name,
+.university {
+    transition: color .3s ease-in-out;
+}
+
+.portfolio-link:hover,
+.company-name:hover,
+.university:hover {
+    color: #161D2A;
+}
+
+.portfolio__item {
+    color: #161D2A;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+.portfolio__stack {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    position: relative;
+    font-weight: 400;
+}
+
+.company-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.company-name,
+.accent-line {
+    color: #6D9BF5;
+    position: relative;
+}
+
+.working-time {
+    font-size: 12px;
+    line-height: 24px;
+    color: #A8A8A8;
+}
+
+.profession-duties {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.profession-duties-item {
+    color: #595959;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.education {
+    list-style: none;
+}
+
+.education__item {
+    margin-bottom: 15px;
+}
+
+.university {
+    color: #6D9BF5;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 15px 0 10px;
+}
+
+.university-description {
+    color: #161D2A;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
